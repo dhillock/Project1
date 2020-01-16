@@ -1,3 +1,5 @@
+/* this is the mobile-first code */
+
 .container {
   width: 1240px;
   margin: 0 auto;
@@ -15,8 +17,9 @@
 .social-icons {
   display: flex;
   height: 150;
+  padding: 0, 0, 0, 0;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   background-color: red;
@@ -24,9 +27,22 @@
 
 .address-block {
   display: flex;
+  margin: 1rem 0;
   height: 150;
   padding: 20px;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   background-color: red;
+}
+/* for tablet view */
+@media screen and (min-width: 600px) {
+  body {
+    background: green;
+  }
+}
+/* for desktop */
+@media screen and (min-width: 1240px) {
+  body {
+    background: purple;
+  }
 }
