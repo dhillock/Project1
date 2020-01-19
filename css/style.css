@@ -107,10 +107,10 @@
 }
 
 .container {
-  /* background-color: orange; */
   font-family: Raleway Light;
   font-size: 14px;
   color: #2d2d2d;
+  color: yellow;
 }
 
 h1,
@@ -122,6 +122,21 @@ h6 {
   font-family: Playfair Display;
 }
 
+h3,
+button,
+a:link,
+#mainMenu {
+  color: #e2574c;
+}
+
+a:hover {
+  color: #b64036;
+}
+
+.footer {
+  /* the color of the text here is inherited by the container class. Is it? */
+  background-color: #242424;
+}
 
 .hero-banner {
   width: 100%;
@@ -143,6 +158,7 @@ h6 {
 }
 
 /* Media query for larger than tablet (like desktop) */
+/* Ensure that is the screen stretches beyond 1240...things don't stretch too large */
 @media screen and (min-width: 1240px) {
   .container {
     background-color: green;
