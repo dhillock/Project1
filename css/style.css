@@ -145,7 +145,7 @@ nav {
 
 .imageLogo {
   display: flex;
-  background-color: orange;
+  background-color: lightsalmon;
   width: 50%;
   justify-content: center;
   align-items: center;
