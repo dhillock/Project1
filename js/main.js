@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("working");
+  console.log("working:Main.js");
 
-  let cartButtonClicks = 0;
-  const cartButtonClicked = document.getElementsByClassName("cartButton");
-  //   console.log(cartButtonClicked);
+  let elem = document.querySelector(".main-carousel");
+  let flkty = new Flickity(elem, {
+    // options
+    cellAlign: "left",
+    contain: true
+  });
 
-  //   cartButtonClicked.addEventListener("click", function() {
-  //     cartButtonClicks++;
-  //     console.log(cartButtonClicks);
-  //   });
+  // element argument can be a selector string
+  //   for an individual element
+  var flkty = new Flickity(".main-carousel", {
+    // options
+  });
 });
