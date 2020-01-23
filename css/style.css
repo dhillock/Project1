@@ -125,11 +125,15 @@ h6 {
   font-family: Playfair Display;
 }
 
+h2 {
+  font-size: 12pt;
+}
+
 h3,
 button,
 a:link,
 .menuMain {
-  /* color: #e2574c; */
+  color: #e2574c;
 }
 
 a:hover {
@@ -145,13 +149,14 @@ nav {
 
 .imageLogo {
   display: flex;
+  height: 0.625in;
   background-color: lightsalmon;
   width: 50%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .imageLogo img {
-  width: 90%;
+  width: 60%;
 }
 
 .imageCart {
@@ -159,7 +164,7 @@ nav {
   background-color: purple;
   width: 50%;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .imageCart img {
@@ -168,27 +173,80 @@ nav {
 
 .menuMain {
   background-color: green;
+  height: 25px;
+  width: 100%;
   display: flex;
   order: 2;
   flex-direction: row;
+  justify-content: space-around;
+  /* align-content: space-between; */
+  align-items: center;
+}
+
+.heroSection {
+  width: 100%;
+  height: 300px;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+  background-position: left, center 50px, center;
+  background-repeat: repeat, no-repeat, repeat;
+  background-size: cover, contain, cover;
+}
+
+.aboutSection {
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0.8125in;
+}
+
+.shop-grid {
+  background-color: crimson;
+}
+
+.mostLoved {
+  background-color: coral;
+}
+
+/* style flickity at the cell level - move this section after the Mosted loced products */
+.product-wrapper {
+  /* width: 25%; */
+  color: hotpink;
+}
+
+.main-carousel {
+  height: 4in;
+}
+
+.signUp {
+  background-color: yellowgreen;
+  height: 2in;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* style flickity at the cell level */
-.product-wrapper {
-  width 50%;
-}
-
 
 footer {
-  background-color: #242424;
-  color: white;
+  /* background-color: #242424; */
+  /* background-color: green; */
+  /* color: rgb(54, 53, 53); */
   /* width: 375; */
-  /* height: 550px; */
+  height: 0.93in;
 }
 
 .contact-info {
-  /* background-color: green; */
+  background-color: red;
   height: 200px;
   line-height: 20px;
   display: flex;
@@ -198,7 +256,7 @@ footer {
 }
 
 .social-icons {
-  /* background-color: hotpink; */
+  background-color: hotpink;
   height: 75px;
   margin-left: 15%;
   margin-right: 15%;
@@ -209,17 +267,6 @@ footer {
   align-items: center;
 }
 
-/* .hero-banner {
-  width: 100%;
-  height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-  background-position: left, center 50px, center;
-  background-repeat: repeat, no-repeat, repeat;
-  background-size: cover, contain, cover;
-  text-align: center;
-} */
-
 /* Media query for anything larger than mobile (tablet, desktop)
 @media screen and (min-width: 600px) {
   .container {
@@ -229,6 +276,7 @@ footer {
 }
 */
 
+/*
 /* Media query for larger than tablet (like desktop) */
 /* Ensure that is the screen stretches beyond 1240...things don't stretch too large */
 /*
