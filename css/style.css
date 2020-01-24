@@ -226,6 +226,7 @@ nav {
 
 .main-carousel {
   height: 4in;
+  /* box-sizing: border-box; */
 }
 
 .signUp {
