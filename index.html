@@ -49,54 +49,28 @@
       </section>
       <!-- The shopping grid -->
       <section class="shop-grid">
-        <!-- 3 shop grid-->
-        <div>
-          <span>Men's</span>
-          <img
-            class="imgLandscape"
-            src="/images/mens-category.jpg"
-            alt="A man holding sunglasses"
-          />
+        <!-- shop grid -->
+        <div class="mens">
+          <span>Men’s</span>
         </div>
-        <div>
-          <span>Trends</span>
-          <img
-            class="imgSquare"
-            src="/images/trends-category.jpg"
-            alt="A mans hat on a stair"
-          />
+        <div class="second-row-container">
+          <div class="trends">
+            <span>Trends</span>
+          </div>
+          <div class="glasses">
+            <span>Glasses</span>
+          </div>
         </div>
-        <div>
-          <span>Glasses</span>
-          <img
-            class="imgSquare"
-            src="/images/glasses-category"
-            alt="A pair of sunlasses"
-          />
+        <div class="third-row-container">
+          <div class="sale">
+            <span>Sale</span>
+          </div>
+          <div class="bags">
+            <span>Bags</span>
+          </div>
         </div>
-        <div>
-          <span class="shop-grid-sale" id=""> Sale</span>
-          <img
-            class="imgSquare"
-            src="/images/sale-category"
-            alt="A picture of a flower"
-          />
-        </div>
-        <div>
-          <span>Bags</span>
-          <img
-            class="imgSquare"
-            src="/images/bags-category"
-            alt="A womans purse"
-          />
-        </div>
-        <div>
-          <span>Women</span>
-          <img
-            class="imgLandscape"
-            src="/images/womens-category"
-            alt="A woman with long hair"
-          />
+        <div class="womens">
+          <span>Women’s</span>
         </div>
       </section>
       <section>
@@ -104,16 +78,16 @@
         <h2 id="jumpFeatured" class="mostLoved">
           <em>Most-Loved </em><strong>Products</strong>
         </h2>
-        <div class="main-carousel">
+        <div class="carousel">
           <!-- Featured products -->
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img src="images/cotton-blue-shirt.jpg" alt="A cotton blue shirt" />
             <p>Shirts</p>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img
               src="images/checked-stretch-dress.jpg"
               alt="a checked stretched dress"
@@ -121,9 +95,9 @@
             <p>Dresses</p>
             <h3>A Checked Stretched Dress</h3>
             <p>$129.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img
               src="images/blue-hipster-backpack.jpg"
               alt="A blue hipster backpack"
@@ -131,9 +105,9 @@
             <p>Bags</p>
             <h3>A Blue Hipster Backpack</h3>
             <p>$69.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img
               src="images/cotton-yellow-tshirt.jpg"
               alt="A cotton yellow t-shirtk"
@@ -141,16 +115,16 @@
             <p>Shirts</p>
             <h3>A Cotton Yellow T-Shirt</h3>
             <p>$66.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img src="images/blue-silk-dress.jpg" alt="A blue silk dress" />
             <p>Dresses</p>
             <h3>A Blue Silk Dress</h3>
             <p>$123.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img
               src="images/pink-dotted-dress.jpg"
               alt="A pink dottede dress"
@@ -158,9 +132,9 @@
             <p>Dresses</p>
             <h3>A Pink Dotted Dress</h3>
             <p>$124.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
-          <figure class="product-wrapper">
+          <figure class="carousel-cell">
             <img
               src="images/stretch-knit-dress.jpg"
               alt="A stretched knit dress"
@@ -168,7 +142,7 @@
             <p>Dresses</p>
             <h3>A Stretched Knit Dress</h3>
             <p>$125.00</p>
-            <button class="cartButton">Add to Cart</button>
+            <input type="submit" value="Add to Cart" class="cart-button" />
           </figure>
         </div>
       </section>
@@ -180,13 +154,23 @@
           out about upcoming sales. Also, get free style tips from our blog.
           Unsubscribe at any time.
         </p>
-        <form class="submitEmail">
-          <input type="email" placeholder="Your Email Address" />
-          <input type="submit" value="Subscribe"
+        <form class="emailSubmit">
+          <input
+            type="email"
+            placeholder="Enter email here."
+            class="emailInput"
+            id="emInput"
+          />
+          <input
+            type="submit"
+            value="Subscribe"
+            class="emailButton"
+            id="submitButton"
+          />
         </form>
       </section>
     </main>
-    <footer id="theFooter">
+    <footer class="theFooter">
       <div class="contact-info">
         <p>&copy 2020 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
         <p>...</p>
@@ -199,13 +183,28 @@
         <p>1490 West Broadway</p>
         <p>Vancouver, BC, Canada</p>
       </div>
-      <div>
+      <div class="testMe">
         <ul class="social-icons">
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-twitter-square"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-pinterest-square"></i></li>
-          <li><i class="fab fa-google-plus-g"></i></li>
+          <li>
+            <i class="fab fa-facebook-f"></i>
+            <span class="social-media-text">Facebook</span>
+          </li>
+          <li>
+            <i class="fab fa-twitter-square"></i>
+            <span class="social-media-text">Twitter</span>
+          </li>
+          <li>
+            <i class="fab fa-instagram"></i>
+            <span class="social-media-text">Instagram</span>
+          </li>
+          <li>
+            <i class="fab fa-pinterest-square"></i>
+            <span class="social-media-text">Pintrist</span>
+          </li>
+          <li>
+            <i class="fab fa-google-plus-g"></i>
+            <span class="social-media-text">Google +</span>
+          </li>
         </ul>
       </div>
     </footer>

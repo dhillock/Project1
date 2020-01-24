@@ -1,49 +1,51 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var elem = document.querySelector(".main-carousel");
+  var elem = document.querySelector(".carousel");
   var flkty = new Flickity(elem, {
     // options
-    // setGallerySize: false,
-    // .carousel { height: 50%; },
-    // .carousel-cell { height: 50% },
-    // .flickity-page-dots { bottom: 10px; },
     cellAlign: "left",
     contain: true,
+    freeScroll: true,
     wrapAround: true
-    // autoPlay: true
   });
-
   // element argument can be a selector string
   //   for an individual element
-  var flkty = new Flickity(".main-carousel", {
+  var flkty = new Flickity(".carousel", {
     // options
   });
-});
 
-/*xxxxxxxxxxxxxxxxxx*/
+  // identify the submitButton, and letup a listener
+  document
+    .getElementById("submitButton")
+    .addEventListener("click", function(event) {
+      // alert("Thank you for Subscribing !");
+      // pull out from the test box, the email address
+      event.preventDefault();
 
-// document.addEventListener(
-//   "click",
-//   function(event) {
-//     // If the clicked element doesn't have the right selector, don't continue
-//     if (!event.target.matches(".menuMain")) return;
+      let tstVar = document.getElementById("emInput");
+      // console.log(tstVar);
+      if (validateEmail(tstVar.value)) {
+        alert("Thank you for subscribing");
+        tstVar.value = "";
+      } else {
+        alert("Invalid emal address. Please try again.");
+      }
+    });
 
-//     // Log the clicked element in the console
-//     console.log("You clicked the menuMain");
-//     console.log(event.target.innerHTML);
-//     // console.log(event.innerHTML);
-//     console.log(event.target);
-//   },
-//   false
-// );
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
 
-var listItems = document.querySelectorAll("ul li"); // this returns an array of each li
-listItems.forEach(function(item) {
-  item.onclick = function(e) {
-    console.log(this.innerText); // this displays clicked li's value
+  // identify which item from all unordered lists, was clicked, and react accordingly
+  var listItems = document.querySelectorAll("ul li"); // this returns an array of each li in the DOM
+  listItems.forEach(function(item) {
+    item.onclick = function(e) {
+      console.log(this.innerText); // this displays clicked li's value
 
-    if (this.innerText == "Updates") {
-      var elmnt = document.getElementById("jumpUpdates");
-      elmnt.scrollIntoView();
-    }
-  };
+      if (this.innerText == "Updates") {
+        var elmnt = document.getElementById("jumpUpdates");
+        elmnt.scrollIntoView();
+      }
+    };
+  });
 });
