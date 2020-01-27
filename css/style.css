@@ -1,4 +1,4 @@
-/* this is the mobile-first styling CSS code */
+/* Mobile-first styling code */
 
 /* Typography */
 @font-face {
@@ -106,14 +106,12 @@
   font-style: normal;
 }
 
-/* Colours */
+/* Colours & Font Specifications: Start */
 
-.container {
-  font-family: Raleway Light;
-  font-size: 14px;
+body .container {
+  font-family: "Raleway Light";
+  font-size: 10.5pt;
   color: #2d2d2d;
-  /* width: 599px; */
-  /* color: yellow; */
 }
 
 h1,
@@ -122,7 +120,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Playfair Display;
+  font-family: "Playfair Display Regular";
 }
 
 h2 {
@@ -140,118 +138,62 @@ a:hover {
   color: #b64036;
 }
 
+/* Colours & Font Specifications: End*/
+/*
+**
+*/
+/* MenuClass class styling: Start */
+
 nav {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.signUp {
-  margin-top: 10px;
-  background-image: url(/images/wave-bkgd.jpg);
-  height: 400px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  line-height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.emailSubmit {
-  position: relative;
-}
-
-.emailInput {
-  width: 60%;
-  height: 65px;
-  border: white;
-  border-radius: 50px;
-}
-
-.emailButton {
-  background-color: #e2574c;
-  width: 25%;
-  height: 55px;
-  border: none;
-  border-radius: 50px;
-  position: absolute;
-  top: 10%;
-  right: 20%;
-}
-
-.carousel {
-  color: #2d2d2d;
-  text-align: center;
-  font-size: 2em;
-}
-.carousel p {
-  color: #969696;
-  font-family: "Raleway Medium";
-  text-transform: uppercase;
-  font-size: 0.5em;
-  margin-bottom: 25px;
-}
-.carousel h3 {
-  color: #e2574c;
-  font-family: "Playfair Display";
-  margin-bottom: 25px;
-}
-
-.cart-button {
-  background: black;
-  color: white;
-  border: none;
-  height: 30px;
-  width: 90px;
-  border-radius: 25px;
-  font-family: "Raleway Medium";
+.menuClass {
+  /* background-color: olivedrab; */
+  height: 100px;
 }
 
 .imageLogo {
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
+  margin-left: 10px;
   display: flex;
-  height: 40%;
-  width: 50%;
-  justify-content: flex-start;
-  align-items: center;
+  width: 45%;
 }
+
 .imageLogo img {
   width: 60%;
 }
 
-.imageCart {
-  background-color: purple;
-  display: flex;
-  height: 40%;
-  width: 50%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.imageCart img {
-  width: 20%;
-}
-
 .menuMain {
-  background-color: green;
-  height: 25px;
+  border: 1px #d7d7d7;
+  border-style: solid none none none;
   width: 100%;
   display: flex;
   order: 2;
   justify-content: space-around;
-  /* align-content: space-between; */
   align-items: center;
 }
 
+.imageCart {
+  /* background-color: purple; */
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.imageCart img {
+  width: 15%;
+}
+/* Menu class styling: End */
+
+/* heroBanner class styling: Start */
+
 .heroSection {
-  width: 100%;
   height: 300px;
-  font-size: 24px;
+  font-size: 18pt;
   color: white;
   display: flex;
   flex-direction: column;
@@ -264,98 +206,115 @@ nav {
   background-size: cover, contain, cover;
 }
 
+.heroH2 {
+  font-family: "Fairplay Display Regular";
+  line-height: 2;
+  text-align: center;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/* heroBanner class styling: End */
+/*
+**
+*/
+/* aboutSection class styling: Start */
+
 .aboutSection {
-  background-color: green;
-  height: 1.5in;
-  padding: 0 5% 0 5%;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  /* background-color: green; */
+  height: 140px;
+  padding: 35px 10px 5px 10px;
+  text-align: center;
   justify-content: center;
-  align-items: center;
 }
 
-/* shop-grid strts here */
+.aboutText {
+  font-size: 10pt;
+  margin-top: 15px;
+  line-height: 1.75;
+}
 
-.shop-grid {
+/* aboutSection class styling: End */
+/*
+**
+*/
+
+/* shopGridSection class styling: Start */
+
+.shopGridSection {
+  text-transform: uppercase;
+  color: #969696; /* was this specification correct? */
+  color: white;
+
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-
 .mens {
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
     url(/images/mens-category.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 2.5%;
-  width: 100%;
-  height: 150px;
+  margin-bottom: 1%;
+  height: 175px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.second-row-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  margin-bottom: 2.5%;
+  flex-basis: 100%;
 }
 .trends {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 49%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
     url(/images/trends-category.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 175px;
-  width: 50%;
+  margin-right: 1%;
 }
 .glasses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
     url(/images/glasses-category.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 175px;
-  width: 47.5%;
-}
-.third-row-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  margin-bottom: 2.5%;
 }
 .sale {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 49%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
     url(/images/sale-category.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 175px;
-  width: 50%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .bags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
     url(/images/bags-category.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 175px;
-  width: 47.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .womens {
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
@@ -363,153 +322,509 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 2.5%;
-  width: 100%;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 100%;
+  height: 175px;
+  margin-bottom: 2.5%;
 }
 
-/* shop-grid stops here */
+/* shopGridSection class styling: End */
 
-/* style flickity at the cell level - move this section after the Mosted loced products */
-
-.carousel {
-  height: 525px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.carousel-cell {
-  width: 100%;
-  height: 500px;
+.mostLoved {
+  /* background-color: crimson; */
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
-.signUp {
-  background-color: yellowgreen;
-  background-image: url(/images/wave-bkgd.jpg);
-  background-position: bottom center;
-  background-repeat: round;
-  height: 2in;
-  padding: 0 5% 0 5%;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+**
 */
-.submitEmail {
-  display: flex;
-  background-color: blue;
-  border: 5px solid #d8786c;
-  border-radius: 5px;
-}
+/* carosell class styling: Start */
 
-footer {
-  /* background-color: #242424; */
+.carousel {
+  height: 550px;
+  width: 100%;
   /* background-color: green; */
-  /* width: 375; */
-  height: 0.93in;
+  margin-bottom: 25px;
+  color: hsl(0, 0%, 18%);
+  text-align: center;
+  font-size: 15pt;
 }
 
-.contact-info {
-  background-color: red;
-  height: 200px;
-  line-height: 20px;
+.carouselCell {
+  /* background-color: gold; */
+  width: 100%;
+  height: 520px;
+}
+
+.carouselCell img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel p {
+  color: #969696;
+  font-family: "Raleway Medium";
+  text-transform: uppercase;
+  font-size: 10pt;
+  margin-bottom: 25px;
+}
+.carousel h3 {
+  color: #e2574c;
+  font-family: "Playfair Display";
+  margin-bottom: 25px;
+}
+
+.carouselCartButton {
+  background: black;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 90px;
+  border-radius: 25px;
+  font-family: "Raleway Medium";
+}
+
+/* carosell class styling: End */
+/*
+**
+*/
+/* signUp  class styling: Start */
+
+.signUp {
+  color: white;
+  margin-bottom: 5px;
+  height: 325px;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+
+  background-image: url(/images/wave-bkgd2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.social-icons {
-  background-color: hotpink;
+.signUp p {
+  padding: 0 10px 0 10px;
+  font-size: 11pt;
+}
+
+.emailInput {
+  width: 70%;
+  height: 40px;
+  border: white;
+  border-radius: 50px;
+}
+
+.emailSubmit {
+  position: relative;
+}
+
+.emailButton {
+  background-color: #e2574c;
+  width: 25%;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  right: 16%;
+}
+
+/* signUp  class styling: End */
+/*
+**
+*/
+/* footerClass class styling: Start */
+
+.footerClass {
+  /* background-color: red; */
+  background-color: #242424;
+  color: white;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  /* height: 0.93in; */
+}
+
+.contactInfo {
+  /* background-color: red; */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIconsUl {
+  /* background-color: hotpink; */
   height: 75px;
   padding: 0 25% 0 25%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.social-media-text {
+.socialMediaText {
   display: none;
 }
+/* footerClass class styling: End */
+
+/*
+**
+*/
+
 /*Media query for anything larger than mobile (tablet, desktop) */
+/*
+**
+*/
 @media screen and (min-width: 600px) {
   .container {
-    background-color: blue;
-    font-size: 16px;
+    /* background-color: blue; */
+    font-size: 12pt;
+  }
+  /* Media Query >= Tablet: signUp class styling: Start */
+
+  .signUp p {
+    padding: 0 90px 0 90px;
+    font-size: 15pt;
+  }
+
+  .emailInput {
+    width: 30%;
+    height: 40px;
+    border: white;
+    border-radius: 50px;
+  }
+
+  .emailButton {
+    background-color: #e2574c;
+    width: 12%;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    right: 36%;
+  }
+
+  /* Media Query >= Tablet: signUp class styling: End */
+  /*
+  **
+  */
+  /* Media Query >= Tablet: navClass class styling: Start */
+
+  nav {
+    /* display: flex; */
+    flex-wrap: nowrap;
+  }
+
+  .menuClass {
+    /* background-color: olivedrab; */
   }
 
   .imageLogo {
-    display: flex;
-    height: 60px;
-    width: 20%;
-
-    justify-content: center;
-    align-items: center;
+    width: 25%;
   }
 
+  .imageLogo img {
+    width: 90%;
+  }
   .menuMain {
-    display: flex;
-    height: 60px;
-    width: 60%;
-
+    width: 50%;
+    margin-left: 80px;
     order: 0;
   }
 
   .imageCart {
-    display: flex;
-    height: 60px;
-    width: 20%;
-    /* padding-right: 1px; */
-    justify-content: center;
-
-    align-items: center;
+    width: 25%;
+    margin-right: 30px;
   }
   .imageCart img {
-    width: 40%;
+    width: 30%;
   }
 
-  .theFooter {
+  /* Media Query >= Tablet: navClass class styling: End */
+  /*
+  **
+  */
+  /* Media Query >= Tablet: aboutSection class styling: Start */
+
+  .aboutSection {
+    height: 175px;
+  }
+
+  .aboutText {
+    font-size: 19pt;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 1.2;
+  }
+
+  /* Media Query >= Tablet: aboutSection class styling: End */
+  /*
+  **
+  */
+  /* Media Query >= Tablet: shopGridSection class styling: Start */
+
+  .shopGridSection {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .mens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 1%;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 49%;
+  }
+  .trends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    margin-right: 1%;
+  }
+  .glasses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+  }
+  .sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    margin-top: 0;
+  }
+  .bags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+    margin-right: 1%;
+    margin-top: 0;
+  }
+  .womens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+      url(/images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2.5%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 175px;
+  }
+
+  /* Media Query >= Tablet: shopGridSection class styling: End */
+  /*
+  **
+  */
+  /* Media Query >= Tablet: carousel class styling: Start */
+
+  .carousel {
+    height: 550px;
+    width: 100%;
+    /* background-color: green; */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 15pt;
+  }
+
+  .carouselCell {
+    /* background-color: gold; */
+    width: 50%;
+    height: 520px;
+  }
+
+  /* Media Query >= Tablet: carousel class styling: End */
+  /*
+  **
+  */
+
+  /* Media Query >= Desktop: signUp class styling: Start */
+
+  /* Media Query >= Tablet: Footer class styling: Start */
+
+  .footerClass {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    /* line-height: 0.9; */
+    flex-direction: row;
     justify-content: space-between;
   }
 
-  .contact-info {
-    background-color: red;
-    height: 200px;
+  .contactInfo {
+    /* background-color: red; */
     width: 40%;
-    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.7;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
 
-  .social-icons {
-    background-color: hotpink;
+  .socialIconsUl {
+    /* background-color: hotpink; */
     height: 200px;
-    width: 33%;
-    padding: 0 25% 0 25%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
   }
 
-  .testMe {
-    background-color: yellowgreen;
-    width: 33%;
+  .socialIconsDiv {
+    /* background-color: yellowgreen; */
+    margin-right: 20px;
+    width: 20%;
   }
-  .social-icons li {
+  .socialIconsUl li {
     display: flex;
   }
 
-  .social-media-text {
+  .socialMediaText {
     display: flex;
+    margin-left: 15px;
+  }
+
+  /* Media Query >= Tablet: Footer class styling: End */
+  /*
+**
+*/
+  /* Media query for desktop */
+  /*
+**
+*/
+  @media screen and (min-width: 1240px) {
+    /* Media Query >= Desktop: navClass class styling: Start */
+
+    .imageLogo img {
+      width: 60%;
+    }
+    .imageCart img {
+      width: 20%;
+    }
+
+    /* Media Query >= Desktop: navClass class styling: End */
+
+    .carouselCell {
+      /* background-color: gold; */
+      width: 25%;
+      height: 520px;
+    }
+    /* Media Query >= Desktop: Footer class styling: Start */
+
+    /* Media Query >= Desktop: Footer class styling: End */
+    /*
+    **
+    */
+    /* Media Query >= Desktop: aboutSection class styling: Start */
+
+    .aboutSection {
+      /* height: 175px; */
+    }
+
+    .aboutText {
+      font-size: 19pt;
+      margin-left: 240px;
+      margin-right: 240px;
+      line-height: 1.75;
+    }
+
+    /* Media Query >= Desktop: aboutSection class styling: End */
+    /*
+    **
+    */
+    /* Media Query >= Desktop: signUp class styling: Start */
+
+    .signUp {
+      margin-bottom: 5px;
+      height: 325px;
+      width: 100%;
+      text-align: center;
+      line-height: 25px;
+
+      background-image: url(/images/wave-bkgd2.jpg);
+      background-position: left, center 50px, center;
+      background-repeat: repeat, no-repeat, repeat;
+      background-size: cover, contain, cover;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .signUp p {
+      padding: 0 300px 0 300px;
+      font-size: 15pt;
+    }
+
+    .emailInput {
+      width: 30%;
+      height: 40px;
+      border: white;
+      border-radius: 50px;
+    }
+
+    .emailButton {
+      background-color: #e2574c;
+      width: 12%;
+      height: 35px;
+      border: none;
+      border-radius: 50px;
+      position: absolute;
+      top: 10%;
+      right: 35.5%;
+    }
+
+    /* Media Query >= Desktop: signUp class styling: End */
   }
 }

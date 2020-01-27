@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/flickity.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Document</title>
+    <title>Aloha Apparel Company Website</title>
   </head>
   <body class="container">
-    <!-- The logo, navigation menu and shopping card icon-->
+    <!-- The logo icon, the navigation menu, and the shopping cart icon-->
     <header>
-      <nav>
+      <nav class="menuClass">
         <div class="imageLogo">
           <!-- The company logo-->
           <img src="images/aloha-logo.svg" />
@@ -33,35 +33,33 @@
       </nav>
     </header>
     <!-- The main site content -->
-    <main class="hero-banner">
+    <main>
       <section class="heroSection">
         <!-- The Hero section-->
-        <p>New Collection</p>
-        <h2>Spring/Summer 2020</h2>
+        <h4>New Collection</h4>
+        <h2 class="heroH2">Spring/Summer 2016</h2>
       </section>
-      <section class="aboutSection">
+      <section class="aboutSection" id="jumpAbout">
         <!-- The about section-->
-        <h2><em>Hand-Crafted</em> <strong>Styles</strong></h2>
-        <p class="aboutText">
-          <br />Aloha Apparel Co sells only the finest ready-to-travel clothing.
+        <h2 style = "font-family: Playfair Display Italics"><em>Hand-Crafted</em> <strong style = "font-family: Playfair Display Bold" >Styles</strong></h2>
+        <p class="aboutText" style = "font-family: Railway Light">
+          Aloha Apparel Co. sells only the finest ready-to-travel clothing.
           Browse our current selection of products or sign-up for updates below.
         </p>
       </section>
       <!-- The shopping grid -->
-      <section class="shop-grid">
+      <section class="shopGridSection" id="jumpShopGrid" >
         <!-- shop grid -->
         <div class="mens">
-          <span>Men’s</span>
+          <span>Men's</span>
         </div>
-        <div class="second-row-container">
-          <div class="trends">
+        <div class="trends">
             <span>Trends</span>
           </div>
           <div class="glasses">
             <span>Glasses</span>
           </div>
         </div>
-        <div class="third-row-container">
           <div class="sale">
             <span>Sale</span>
           </div>
@@ -70,24 +68,27 @@
           </div>
         </div>
         <div class="womens">
-          <span>Women’s</span>
+          <span>Women's</span>
         </div>
       </section>
-      <section>
         <!-- 4 featured section-->
-        <h2 id="jumpFeatured" class="mostLoved">
-          <em>Most-Loved </em><strong>Products</strong>
+        <h2 class="mostLoved" id="jumpFeatured">
+          <em style = "font-family: Playfair Display Italics">Most-Loved</em><strong style = "font-family: Playfair Display Bold">&nbspProduct</strong>
         </h2>
         <div class="carousel">
           <!-- Featured products -->
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img src="images/cotton-blue-shirt.jpg" alt="A cotton blue shirt" />
             <p>Shirts</p>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img
               src="images/checked-stretch-dress.jpg"
               alt="a checked stretched dress"
@@ -95,9 +96,13 @@
             <p>Dresses</p>
             <h3>A Checked Stretched Dress</h3>
             <p>$129.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img
               src="images/blue-hipster-backpack.jpg"
               alt="A blue hipster backpack"
@@ -105,9 +110,13 @@
             <p>Bags</p>
             <h3>A Blue Hipster Backpack</h3>
             <p>$69.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img
               src="images/cotton-yellow-tshirt.jpg"
               alt="A cotton yellow t-shirtk"
@@ -115,16 +124,24 @@
             <p>Shirts</p>
             <h3>A Cotton Yellow T-Shirt</h3>
             <p>$66.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img src="images/blue-silk-dress.jpg" alt="A blue silk dress" />
             <p>Dresses</p>
             <h3>A Blue Silk Dress</h3>
             <p>$123.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img
               src="images/pink-dotted-dress.jpg"
               alt="A pink dottede dress"
@@ -132,9 +149,13 @@
             <p>Dresses</p>
             <h3>A Pink Dotted Dress</h3>
             <p>$124.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
-          <figure class="carousel-cell">
+          <figure class="carouselCell">
             <img
               src="images/stretch-knit-dress.jpg"
               alt="A stretched knit dress"
@@ -142,7 +163,11 @@
             <p>Dresses</p>
             <h3>A Stretched Knit Dress</h3>
             <p>$125.00</p>
-            <input type="submit" value="Add to Cart" class="cart-button" />
+            <input
+              type="submit"
+              value="Add to Cart"
+              class="carouselCartButton"
+            />
           </figure>
         </div>
       </section>
@@ -170,40 +195,40 @@
         </form>
       </section>
     </main>
-    <footer class="theFooter">
-      <div class="contact-info">
-        <p>&copy 2020 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
-        <p>...</p>
+    <footer class="footerClass">
+      <div class="contactInfo">
+        <p>&copy 2016 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
+        <p style="color: black;">...</p>
         <p>
           604-604-6040.
 
           <a href="mailtgo:info@alohaapparel.com"> info@alohaapparel.com </a>
         </p>
-        <p>...</p>
+        <p style="color:black;">...</p>
         <p>1490 West Broadway</p>
         <p>Vancouver, BC, Canada</p>
       </div>
-      <div class="testMe">
-        <ul class="social-icons">
+      <div class="socialIconsDiv">
+        <ul class="socialIconsUl">
           <li>
             <i class="fab fa-facebook-f"></i>
-            <span class="social-media-text">Facebook</span>
+            <span class="socialMediaText">Facebook</span>
           </li>
           <li>
             <i class="fab fa-twitter-square"></i>
-            <span class="social-media-text">Twitter</span>
+            <span class="socialMediaText">Twitter</span>
           </li>
           <li>
             <i class="fab fa-instagram"></i>
-            <span class="social-media-text">Instagram</span>
+            <span class="socialMediaText">Instagram</span>
           </li>
           <li>
             <i class="fab fa-pinterest-square"></i>
-            <span class="social-media-text">Pintrist</span>
+            <span class="socialMediaText">Pintrist</span>
           </li>
           <li>
             <i class="fab fa-google-plus-g"></i>
-            <span class="social-media-text">Google +</span>
+            <span class="socialMediaText">Google+</span>
           </li>
         </ul>
       </div>
