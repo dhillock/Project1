@@ -1,0 +1,43 @@
+/* MenuClass class styling: Start */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menuClass {
+  height: 100px;
+}
+
+.imageLogo {
+  /* margin-left: 10px; */
+  padding-left: 10px;
+  display: flex;
+  width: 45%;
+}
+
+.imageLogo img {
+  width: 60%;
+}
+
+.menuMain {
+  border: 1px #d7d7d7;
+  border-style: solid none none none;
+  width: 100%;
+  display: flex;
+  order: 2;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imageCart {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.imageCart img {
+  width: 15%;
+}
+/* Menu class styling: End */

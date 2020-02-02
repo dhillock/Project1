@@ -1,0 +1,16 @@
+/* aboutSection class styling: Start */
+
+.aboutSection {
+  height: 140px;
+  padding: 35px 10px 5px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.aboutText {
+  font-size: 10pt;
+  margin-top: 15px;
+  line-height: 1.75;
+}
+
+/* aboutSection class styling: End */

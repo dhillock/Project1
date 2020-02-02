@@ -2,16 +2,34 @@
 <!-- This is the HTML file for the Aloha Apparel Co Project -->
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/flickity.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/flickity.css"/>
+    <link rel="stylesheet" href="css/00-Style-Container.css"/>
+    <link rel="stylesheet" href="css/01-Nav.css"/>
+    <link rel="stylesheet" href="css/02-Hero.css"/>
+    <link rel="stylesheet" href="css/03-About.css"/>
+    <link rel="stylesheet" href="css/04-ShopGrid.css"/>
+    <link rel="stylesheet" href="css/05-MostLoved.css"/>
+    <link rel="stylesheet" href="css/05-MostLoved.css"/>
+    <link rel="stylesheet" href="css/06-Carousel.css"/>
+    <link rel="stylesheet" href="css/07-SignUp.css"/>
+    <link rel="stylesheet" href="css/08-Footer.css"/>
+    <link rel="stylesheet" href="css/09-MQ-Tablet.css"/>
+    <link rel="stylesheet" href="css/10-MQ-Desktop.css"/>
+    
+        <script
+    src="https://kit.fontawesome.com/e785bdc78c.js"
+    crossorigin="anonymous">
+    </script>
 
     <title>Aloha Apparel Company Website</title>
   </head>
-  <body class="container">
+  <body>
     <!-- The logo icon, the navigation menu, and the shopping cart icon-->
     <header>
       <nav class="menuClass">
@@ -41,8 +59,10 @@
       </section>
       <section class="aboutSection" id="jumpAbout">
         <!-- The about section-->
-        <h2 style = "font-family: Playfair Display Italics"><em>Hand-Crafted</em> <strong style = "font-family: Playfair Display Bold" >Styles</strong></h2>
-        <p class="aboutText" style = "font-family: Railway Light">
+        <h2>
+           <span class="playfair-italic">Hand-Crafted</span>   <span class="playfair-bold">Styles</span>
+        </h2>
+        <p class="aboutText" >
           Aloha Apparel Co. sells only the finest ready-to-travel clothing.
           Browse our current selection of products or sign-up for updates below.
         </p>
@@ -73,7 +93,7 @@
       </section>
         <!-- 4 featured section-->
         <h2 class="mostLoved" id="jumpFeatured">
-          <em style = "font-family: Playfair Display Italics">Most-Loved</em><strong style = "font-family: Playfair Display Bold">&nbspProduct</strong>
+          <span class="playfair-italic">Most-Loved</span> <span class="playfair-bold">&nbspProducts</span></span>
         </h2>
         <div class="carousel">
           <!-- Featured products -->
@@ -173,7 +193,9 @@
       </section>
       <section class="signUp" id="jumpUpdates">
         <!-- 5 update section-->
-        <h2><em>Sign-up for </em> <strong>Updates</strong></h2>
+        <h2>
+          <span class="playfair-italic">Sign-up for</span> <span class="playfair-bold">Updates</span>
+        </h2>
         <p>
           Stay updated on our latest product releases, and be the first to find
           out about upcoming sales. Also, get free style tips from our blog.
@@ -197,16 +219,12 @@
     </main>
     <footer class="footerClass">
       <div class="contactInfo">
-        <p>&copy 2016 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
-        <p style="color: black;">...</p>
-        <p>
-          604-604-6040.
-
-          <a href="mailtgo:info@alohaapparel.com"> info@alohaapparel.com </a>
+        <p class = "copyright">&copy 2016 Aloha Apparel Co.<br />Powered by HTML and CSS.</p>
+        <p style="color:black;">...</p>
+        <p class="contactInfo2"> 604-604-6040. <a href="mailtgo:info@alohaapparel.com"> info@alohaapparel.com </a>
         </p>
         <p style="color:black;">...</p>
-        <p>1490 West Broadway</p>
-        <p>Vancouver, BC, Canada</p>
+        <p class="address">1490 W Broadway <br />Vancouver, BC, Canada</p>
       </div>
       <div class="socialIconsDiv">
         <ul class="socialIconsUl">
@@ -237,7 +255,7 @@
       src="https://kit.fontawesome.com/d1d29f7fcc.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/flickity.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
+    <script src="js/flickity.js"></script>
+    <script src="js/main.js"></script>
+  </body
 </html>

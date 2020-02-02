@@ -1,0 +1,9 @@
+/* mostLoved class styling: Start */
+
+.mostLoved {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* mostLoved class styling: End */

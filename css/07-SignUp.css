@@ -1,0 +1,48 @@
+/* signUp  class styling: Start */
+
+.signUp {
+  color: white;
+  margin-bottom: 5px;
+  height: 325px;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+
+  background-image: url(/images/wave-bkgd2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.signUp p {
+  color: white;
+  padding: 0 10px 0 10px;
+  font-size: 11pt;
+}
+
+.emailInput {
+  width: 70%;
+  height: 40px;
+  border: white;
+  border-radius: 50px;
+}
+
+.emailSubmit {
+  position: relative;
+}
+
+.emailButton {
+  background-color: #e2574c;
+  width: 25%;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  right: 16%;
+}
+
+/* signUp  class styling: End */
