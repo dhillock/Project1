@@ -4,13 +4,12 @@
 **
 */
 @media screen and (min-width: 1240px) {
-  /* Media Query >= Desktop: navClass class styling: Start */
-
-  .imageLogo img {
-    width: 60%;
+  body {
+    margin: 0 12%;
   }
-  .imageCart img {
-    width: 20%;
+
+  .aboutText {
+    font-size: 1.5em;
   }
 
   .carouselCell {
@@ -18,28 +17,6 @@
     width: 25%;
     height: 520px;
   }
-  /*
-  **
-  */
-  /* Media Query >= Desktop: aboutSection class styling: Start */
-
-  .aboutSection {
-    font-size: 19pt;
-    /* height: 175px; */
-  }
-
-  .aboutText {
-    font-size: 19pt;
-    margin-left: 240px;
-    margin-right: 240px;
-    line-height: 1.75;
-  }
-
-  /* Media Query >= Desktop: aboutSection class styling: End */
-  /*
-    **
-    */
-  /* Media Query >= Desktop: signUp class styling: Start */
 
   .signUp {
     margin-bottom: 5px;
@@ -59,8 +36,7 @@
   }
 
   .signUp p {
-    padding: 0 300px 0 300px;
-    font-size: 15pt;
+    font-size: 1.5em;
   }
 
   .emailInput {
@@ -71,29 +47,9 @@
   }
 
   .emailButton {
-    background-color: #e2574c;
     width: 12%;
     height: 35px;
-    border: none;
-    border-radius: 50px;
-    position: absolute;
     top: 10%;
     right: 35.5%;
   }
-
-  /* Media Query >= Desktop: signUp class styling: End */
 }
-
-/* Media Query >= Desktop: Footer class styling: Start */
-
-.socialIconsDiv {
-  width: 40%;
-  padding: 0 0 0 60%;
-}
-.socialIconsUl li {
-  display: flex;
-}
-
-/* Media Query >= Desktop: Footer class styling: End */
-
-/*Media query for Desktop - End */

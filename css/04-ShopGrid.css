@@ -1,6 +1,8 @@
 /* shopGridSection class styling: Start */
 
 .shopGridSection {
+  font-family: "Raleway Medium";
+  font-size: 1.25em;
   text-transform: uppercase;
   color: #969696;
   display: flex;

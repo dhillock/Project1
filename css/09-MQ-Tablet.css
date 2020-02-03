@@ -3,15 +3,25 @@
 **
 */
 @media screen and (min-width: 600px) {
+  /* CSS Defaults: h1 = 2em, h2 = 1.5em, h3 = 1.17em, h4 = 1em, h5 = .83em, h6 = .67em   */
+
   body {
-    /* background-color: blue; */
-    font-size: 12pt;
+    font-size: 12pt; /* 16px */
+    margin: 0 8%;
   }
+
+  .playfair-bold {
+    font-size: 2em;
+  }
+
+  .playfair-italic {
+    font-size: 2em;
+  }
+
   /* Media Query >= Tablet: signUp class styling: Start */
 
   .signUp p {
-    padding: 0 90px 0 90px;
-    font-size: 15pt;
+    font-size: 1.2em;
   }
 
   .emailInput {
@@ -80,10 +90,8 @@
   }
 
   .aboutText {
-    font-size: 19pt;
-    margin-left: 25px;
-    margin-right: 25px;
-    line-height: 1.2;
+    font-size: 1.2em;
+    line-height: 1.6;
   }
 
   /* Media Query >= Tablet: aboutSection class styling: End */
@@ -188,7 +196,7 @@
     /* background-color: green; */
     margin-bottom: 25px;
     text-align: center;
-    font-size: 15pt;
+    font-size: 1.25em;
   }
 
   .carouselCell {
@@ -208,7 +216,8 @@
 
   .footerClass {
     width: 100%;
-    height: 250px;
+    height: 225px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -217,23 +226,21 @@
   .copyright,
   .contactInfo2,
   .address {
-    width: 50%;
+    width: 100%;
+    padding-left: 20%;
     display: flex;
-    align-content: flex-start;
+    flex-direction: row;
+    justify-content: start;
   }
 
   .socialIconsUl {
-    height: 200px;
-    margin-top: 20px;
+    height: 150px;
+    width: 175px;
+    padding-top: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .socialIconsDiv {
-    width: 40%;
-    /* padding: 0 0 0 50%; */
   }
 
   .socialIconsUl li {
