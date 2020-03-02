@@ -40,16 +40,16 @@ document.addEventListener("DOMContentLoaded", function() {
       // console.log(this.innerText); // display the clicked li value
       if (this.innerText === "About") {
         const elmnt = document.getElementById("jumpAbout");
-        elmnt.scrollIntoView();
+        elmnt.scrollIntoView({ behavior: "smooth" });
       } else if (this.innerText === "Shop") {
         const elmnt = document.getElementById("jumpShopGrid");
-        elmnt.scrollIntoView();
+        elmnt.scrollIntoView({ behavior: "smooth" });
       } else if (this.innerText === "Featured") {
         const elmnt = document.getElementById("jumpFeatured");
-        elmnt.scrollIntoView();
+        elmnt.scrollIntoView({ behavior: "smooth" });
       } else if (this.innerText === "Updates") {
         const elmnt = document.getElementById("jumpUpdates");
-        elmnt.scrollIntoView();
+        elmnt.scrollIntoView({ behavior: "smooth" });
       }
     };
   });
